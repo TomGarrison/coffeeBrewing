@@ -1,0 +1,663 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-weight: 250;
+    font-size: 50px;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#headerBrew {
+  color: rgb(164, 109, 0);
+    font-size: 6em;
+}
+
+article {
+    text-align: center;
+    color: #fff;
+}
+
+
+/*font face*/
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizedlegibility;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 165, 96, 1);
+    background: -webkit-linear-gradient(bottom left, #55371c 0%, #55371c 100%);
+    background: -o-linear-gradient(bottom left, #55371c 0%, #55371c 100%);
+    background: linear-gradient(to top right, #55371c 0%, #55371c 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#55371c', endColorstr='#55371c', GradientType=1);
+}
+
+.container {
+    margin: 20px auto;
+    display: block;
+    background-color: white;
+    max-width: 1300px;
+    /*width: 800px;*/
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.date {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 2.3em;
+    margin-top: -80px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: #999;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+#dateWithColor {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-top: -80px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: rgb(164, 109, 0);
+    text-transform: uppercase;
+    text-align: center;
+    /*font-family: 'Amatic SC', cursive;*/
+}
+
+.date2 {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 2.3em;
+    margin-top: -80px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: #999;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    font-size: 4.3em;
+    margin-top: 10px;
+    color: SaddleBrown;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+    max-width: 45px;
+    border: 2px solid #885805;
+    background-color: SaddleBrown;
+}
+
+.description {
+    text-align: center;
+    color: #777;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 38px;
+    margin-bottom: 0px;
+    font-family: 'Amatic SC', cursive;
+}
+
+img {
+  height: 350px;
+  width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+/*
+#chemex {
+    height: 350px;
+    width: 350px;
+}
+
+#AeroPress {
+    height: 350px;
+    width: 350px;
+}
+
+#v60 {
+    height: 350px;
+    width: 350px;
+}*/
+/*img{
+    height: 350px;
+    width: 350px;
+}*/
+/*#Fpress {
+    height: 350px;
+    width: 350px;
+}
+
+#ColdBrew {
+    height: 350px;
+    width: 350px;
+}
+
+#vpot {
+    height: 350px;
+    width: 350px;
+}*/
+
+.image-grid {
+    font-size: 0;
+    flex-flow: row wrap;
+    display: flex;
+    padding: .1vh;
+    li {
+        flex: auto;
+        width: 200px;
+        margin: .1vh;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+hr {
+    /*height: 0;*/
+    /*border: none;*/
+    border-bottom: 1px solid #c1c1c1;
+    /*margin-bottom: 1.5em;*/
+    /*background: none;*/
+}
+
+img:hover {
+    filter: grayscale(100%);
+    /* Current draft standard */
+    -webkit-filter: grayscale(100%);
+    /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    /* Not yet supported in Gecko, Opera or IE */
+    filter: url(resources.svg#desaturate);
+    /* Gecko */
+    filter: gray;
+    /* IE */
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
+}
+
+.containerPress {
+    width: 500px;
+    margin: 50px auto
+}
+
+.open-modalPress {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalPress:hover {
+    background-color: #bff2e5
+}
+
+.modalPress {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalPress {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+
+#numbers {
+    color: rgb(116, 60, 2);
+    font-size: 43px;
+    font-family: 'Mr De Haviland', cursive;
+    font-weight: lighter;
+}
+
+#modalContentPress {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+
+/*CHEMEX*/
+
+#modalContentChemex {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+.container1Chemex {
+    width: 500px;
+    margin: 50px auto
+}
+
+.modalChemex {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.open-modalChemex {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalChemex:hover {
+    background-color: #bff2e5
+}
+
+.modalChemex {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalChemex {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+
+#numbers {
+    color: rgb(116, 60, 2);
+    font-size: 43px;
+    font-family: 'Mr De Haviland', cursive;
+    font-weight: lighter;
+}
+
+#modalContentChemex {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+
+/*V60 V60*/
+
+#modalContentChemex {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+.containerV60 {
+    width: 500px;
+    margin: 50px auto
+}
+
+.modalV60 {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.open-modalV60 {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalV60:hover {
+    background-color: #bff2e5
+}
+
+.modalV60 {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalV60 {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+
+#modalContentv60 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+/*AEROPRESS START*/
+
+#modalContentAeroPress {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+.containerAeroPress {
+    width: 500px;
+    margin: 50px auto
+}
+
+.modalAeroPress {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.open-modalAeroPress {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalAeroPress:hover {
+    background-color: #bff2e5
+}
+
+.modalAeroPress {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalAeroPress {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+/*COLD BREW START*/
+
+#modalContentColdBrew {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+.containerColdBrew {
+    width: 500px;
+    margin: 50px auto
+}
+
+.modalColdBrew {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.open-modalColdBrew {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalColdBrew:hover {
+    background-color: #bff2e5
+}
+
+.modalColdBrew {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalColdBrew {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+
+/*VPOT start*/
+#modalContentVpot {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+.containerVpot {
+    width: 500px;
+    margin: 50px auto
+}
+
+.modalVpot {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.open-modalVpot {
+    background-color: #5cf9d2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    padding: 20px 40px;
+    text-transform: uppercase
+}
+
+.open-modalVpot:hover {
+    background-color: #bff2e5
+}
+
+.modalVpot {
+    font-size: 33px;
+    overflow: scroll;
+    background-color: #dbd9d9;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 50px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.close-modalVpot {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px
+}
+/*stopwatch*/
